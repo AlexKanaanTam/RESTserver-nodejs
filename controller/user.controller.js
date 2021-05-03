@@ -73,9 +73,9 @@ const usuarioDelete = async(req, res=response)=> {
     // const usuario= await Usuario.findByIdAndDelete(id);
 
     //Forma recomendada de borrar usuario
-    const usuario= await Usuario.findByIdAndUpdate(id, {estado:false});
+    const usuarios= await Usuario.findByIdAndUpdate(id, {estado:false});
 
-    res.json(usuario)
+    res.json(usuarios)
 }
 
 
